@@ -31,7 +31,7 @@ public class PageViewServiceImpl implements PageViewService {
     }
 
     @Override
-    public void sendPageViewEvent(PageViewEvent event) throws JAXBException {
+    public void sendPageViewEvent(PageViewEvent event) {
     	
         Writer w = new StringWriter();
         JAXB.marshal(event, w);

@@ -1,7 +1,5 @@
 package guru.springframework.pageview;
 
-import javax.xml.bind.JAXBException;
-
 import guru.springframework.model.events.PageViewEvent;
 
 /**
@@ -9,5 +7,5 @@ import guru.springframework.model.events.PageViewEvent;
  */
 public interface PageViewService {
 
-    void sendPageViewEvent(PageViewEvent event) throws JAXBException;
+    void sendPageViewEvent(PageViewEvent event);
 }
